@@ -32,7 +32,7 @@ published: true
         </ul>
       </nav>
     </header>
-    <img class="mast" src="http://placehold.it/979x569">
+    <img class="mast" src="{% editable_file 'masthead' %}http://placehold.it/979x569{% endeditable_file %}">
     <div id="main">
     {% block 'main' %}
     {% endblock %}
