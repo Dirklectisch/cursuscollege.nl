@@ -6,14 +6,39 @@ published: true
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    {{ 'fonts.css' | stylesheet_tag }}
+    {{ 'styles.css' | stylesheet_tag }}
     <title>{{ site.name }}</title>
     <meta name="keywords" value="{{ site.meta_keywords }}" />
     <meta name="description" value="{{ site.meta_description }}" />
   </head>
-  <body>
-    <h1>{{ page.title }}</h1>
+  <body class="{{ page.slug }}">
+    <header>
+      <img class="logo" src="{{ 'logo.png' | theme_image_url }}"/>
+      <nav class="global">
+        <ul>
+          <li><a href="#">Nieuws</a></li>
+          <li>
+            <a href="#">Cursussen</a>
+            <ul>
+              <li><a href="#">Interieur</a></li>
+              <li><a href="#">Mode</a></li>
+              <li><a href="#">Wedding</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Docenten</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img class="mast" src="http://placehold.it/979x569">
+    <div id="main">
     {% block 'main' %}
-    <p>Lorem ipsum....</p>
     {% endblock %}
+    </div>
+    <footer>
+      <img src="./img/logo.png" >
+    </footer>
   </body>
 </html>
