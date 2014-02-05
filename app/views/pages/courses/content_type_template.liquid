@@ -1,0 +1,40 @@
+---
+title: Course template
+
+# true if the page is included in the menu
+listed: false
+
+# true if the page is published
+published: true
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# content type that this page is templatizing
+content_type: courses
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends parent %}
+
+{% block main %}
+
+{% assign category-color = "#2C9AE5" %}
+  
+<div class="details" style="border-color: #2C9AE5">
+  <article class="course">
+    <img class="category" src="http://placehold.it/119x227">
+    <header>
+      <hgroup>
+        <h1>{{ course.title }}</h1>
+        <h2>Categorie</h2>
+      </hgroup>
+    </header>
+    <img class="featured" src="{{ course.image.url }}">
+    <p>{{ course.description }}</p>
+  </arcticle>
+</div>
+
+{% endblock %}

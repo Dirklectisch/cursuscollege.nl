@@ -1,8 +1,8 @@
 # Public name of this content type
-name: Course
+name: Courses
 
 # Lowercase, underscored handle used to access this type
-slug: course
+slug: courses
 
 # Explanation for the backoffice
 description: Een cursus

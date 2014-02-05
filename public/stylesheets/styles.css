@@ -1,7 +1,7 @@
 /* Global */
 
 body * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Regular', sans-serif;
 }
 
 * {
@@ -82,129 +82,64 @@ img.mast {
   margin-bottom: 63px;
 }
 
-/* */
-
-/* */
-
 p {
-	font: 13pt/21.5pt 'Open Sans', sans-serif;
+  font-size: 13pt;
+  line-height: 21,5pt;
 }
 
-section.courses {
+/* Courses */
+
+div.details {
   width: 731px;
+  border-style: solid;
+  border-left-width: 10px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-color: #2C9AE5;
+  background-color: white;
+  padding: 10px;
 }
 
-article.course {
-  position: relative;
-  height: 248px;
-  margin-bottom: 20px;
-  background: #A8CC46;
-}
-
-article.course > * {
-  display: inline-block;
-  vertical-align: top;
-}
-
-article.course > img {
-  width: 237px;
-  background: white;
-  padding: 11px;
-  margin-left: 6px;
-}
-
-article.course > div {
-  width: 369px;
-  padding: 11px;
-  height: 248px;
-  background: white;
-}
-
-article.course > div > header {
+article.course > header {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-article.course > div > header > hgroup > h1 {
+article.course > header * {
+  font-family: 'Open Sans Bold', sans-serif; 
+}
+
+article.course > header > hgroup > h1 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font: 20pt 'Open Sans', sans-serif;
+  font-size: 20pt;
   font-weight: bold;
   line-height: 1em;
-  color: #A8CC46;
+  color: #2C9AE5;
   text-transform: uppercase;
 }
 
-article.course > div > header > hgroup > h2 {
+article.course > header > hgroup > h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font: 12pt 'Open Sans', sans-serif;
+  font-size: 12pt;
   font-style: italic;
   line-height: 1em;
-  color: #A8CC46;
+  color: #2C9AE5;
   text-transform: uppercase;
 }
 
-article.course > div > p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 183px;
-  overflow: hidden;
+article.course > img.featured {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-article.course > aside {
-  width: 119px;
-}
-
-article.course > aside > img {
-  height: 173px;
-  width: 119px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 3px;
-  border-color: white;
-  border-style: solid;
-}
-
-article.course > aside > div {
-  text-align: center;
-}
-
-article.course > aside > div > * {
-  font: 13pt 'Open Sans', sans-serif;
-  color: white;
-}
-
-section.ads {
-  position: absolute;
-  height: 566px;
-  width: 248px;
-  right: 0px;
-  top: 248px;
-  border-right-width: 10px;
-  border-left-width: 10px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-color: #686868;
-  border-style: solid;
-}
-
-footer {
-  position: relative;
-  top: -100px;
-  width: 1032px;
-  height: 162px;
-  padding-top: 30px;
-  padding-left: 30px;
-  margin-bottom: 30px;
-  background: #2C9AE5;
-}
-
-footer > img {
-  height: 95px;
-  width: 95px;
-  visibility: hidden;
+article.course > img.category {
+  float: right;
+  margin-left: 10px;;
 }
