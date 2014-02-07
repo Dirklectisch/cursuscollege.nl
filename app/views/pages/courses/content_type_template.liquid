@@ -23,7 +23,7 @@ content_type: courses
 
 {% assign category-color = "#2C9AE5" %}
   
-<div class="details" style="border-color: #2C9AE5">
+<div class="details contentbox" style="border-color: {{ category-color }}">
   <article class="course">
     <img class="category" src="http://placehold.it/119x227">
     <header>
@@ -35,6 +35,12 @@ content_type: courses
     <img class="featured" src="{{ course.image.url }}">
     <p>{{ course.description }}</p>
   </arcticle>
+</div>
+<br/>
+<div class="related" >
+  <h3>Andere Cursussen</h3>
+  {% include summary with course %}
+  {% include summary with course %}
 </div>
 
 {% endblock %}

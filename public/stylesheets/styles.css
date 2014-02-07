@@ -54,7 +54,7 @@ nav li {
 }
 
 nav li a {
-  font-size: 12pt;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -83,14 +83,11 @@ img.mast {
 }
 
 p {
-  font-size: 13pt;
-  line-height: 21,5pt;
+  font-size: 13px;
+  line-height: 21,5px;
 }
 
-/* Courses */
-
-div.details {
-  width: 731px;
+div.contentbox {
   border-style: solid;
   border-left-width: 10px;
   border-right-width: 0px;
@@ -98,6 +95,12 @@ div.details {
   border-top-width: 0px;
   border-color: #2C9AE5;
   background-color: white;
+}
+
+/* Courses */
+
+div.details {
+  width: 652px;
   padding: 10px;
 }
 
@@ -108,38 +111,108 @@ article.course > header {
   padding-bottom: 0px;
 }
 
-article.course > header * {
+article.course header * {
   font-family: 'Open Sans Bold', sans-serif; 
 }
 
-article.course > header > hgroup > h1 {
+article.course header > hgroup > h1 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 20pt;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1em;
   color: #2C9AE5;
   text-transform: uppercase;
 }
 
-article.course > header > hgroup > h2 {
+article.course header > hgroup > h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 12pt;
+  font-size: 12px;
   font-style: italic;
   line-height: 1em;
   color: #2C9AE5;
   text-transform: uppercase;
 }
 
-article.course > img.featured {
+div.details article.course > img.featured {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-article.course > img.category {
+div.details article.course > img.category {
   float: right;
-  margin-left: 10px;;
+  margin-left: 10px;
+}
+
+/* Related Courses */
+
+div.related > h3 {
+  display: block;
+  font-size: 14px;
+  width: 162px;
+  height: 33px;
+  background: #2C9AE5;
+  color: white;
+  text-transform: uppercase;
+}
+
+div.related > div.summary {
+  margin-bottom: 20px;
+}
+
+/* Course Summary */
+
+div.summary {
+  width: 731px;
+  height: 248px;
+}
+
+div.summary > article.course > * {
+  float: left;
+}
+
+div.summary > article.course > img {
+  margin: 10px;
+  width: 215px;
+}
+
+div.summary > article.course > div {
+  margin-top: 10px;
+  width: 367px;
+}
+
+div.summary > article.course > div > p {
+  margin-top: 5px;
+}
+
+div.summary > article.course > aside {
+  width: 119px;
+  height: 248px;
+}
+
+div.summary > article.course > aside > img {
+  height: 173px;
+  width: 119px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 3px;
+  border-color: white;
+  border-style: solid;
+}
+
+div.summary > article.course > aside > div {
+  text-align: center;
+  height: 75px;
+  background-color: #2C9AE5;
+  position: relative;
+  top: -5px;
+}
+
+div.summary > article.course > aside > div > * {
+  font: 13px 'Open Sans Regular', sans-serif;
+  color: white;
 }
