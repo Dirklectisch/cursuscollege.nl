@@ -1,0 +1,16 @@
+- "Doen":
+    color: "#A8CC46"
+    logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Bloemen":
+    color: "#EA476A"
+    logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Wedding":
+    color: "#FC5EB9"
+    logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Mode":
+    color: "#D69061"
+    logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
+

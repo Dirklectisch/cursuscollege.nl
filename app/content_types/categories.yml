@@ -1,11 +1,11 @@
 # Public name of this content type
-name: Courses
+name: Categories
 
 # Lowercase, underscored handle used to access this type
-slug: courses
+slug: categories
 
 # Explanation for the backoffice
-description: Een cursus
+description: Een cursus categorie
 
 # Default field (e.g title)
 label_field_name: title
@@ -31,37 +31,28 @@ fields:
     label: Title
     type: string
     required: true
-    hint: De titel van de cursus
+    hint: De naam van de catogrie
     localized: false
 
-- teaser: # Name of the field
-    label: Teaser
-    type: text
-    required: true
-    hint: Een korte omschrijving van de cursus welke wordt gebruikt in overzichten
+- color: # Name of the field
+    label: Color
+    type: string
+    required: false
+    hint: Het kleurnummer van de categorie
     localized: false
-    # Enable or not the RTE [html|text]
-    text_formatting: text
 
-- description: # Name of the field
-    label: Description
-    type: text
-    required: true
-    hint: De volledige omschrijving van de cursus
-    localized: false
-    # Enable or not the RTE [html|text]
-    text_formatting: html
-
-- image: # Name of the field
-    label: Image
+- logo: # Name of the field
+    label: Logo
     type: file
     required: false
-    hint: De afbeelding bij de cursus omschrijving
+    hint: Het logo van de categorie
     localized: false
     
-- category: # Name of the field
-    label: Category # Human readable name of the field
-    type: belongs_to
-    required: true
+- courses: # Name of the field
+    label: Courses
+    type: has_many
+    required: false
     localized: false
-    class_name: categories
+    class_name: courses # Define the slug of the target content type (eg. comments)
+    inverse_of: category  # Define the name of the field referring to Tests in the target content type
+    ui_enabled: true # If you want to manage the entries of the relationship directly from the source entry
