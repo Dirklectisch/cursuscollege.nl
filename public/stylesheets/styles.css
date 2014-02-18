@@ -163,6 +163,12 @@ div.related > div.summary {
   margin-bottom: 20px;
 }
 
+/* Course List */
+
+div.courses > div.summary {
+  margin-bottom: 20px;
+}
+
 /* Course Summary */
 
 div.summary {
@@ -215,4 +221,53 @@ div.summary > article.course > aside > div {
 div.summary > article.course > aside > div > * {
   font: 13px 'Open Sans Regular', sans-serif;
   color: white;
+}
+
+/* Category Menu */
+
+#main > div.categories {
+  float: right;
+  margin-right: 40px;
+}
+
+div.categories {
+  width: 162px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+div.categories > h1 {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #686868;
+  text-align: center;
+}
+
+div.category {
+  width: 136px;
+  height: 33px;
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 7px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #686868;
+}
+
+div.category > span {
+  display: inline-block;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 12px;
+  margin-right: 0px;
 }

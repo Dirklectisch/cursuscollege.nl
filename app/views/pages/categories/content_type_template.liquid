@@ -1,0 +1,44 @@
+---
+title: Category template
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# content type that this page is templatizing
+content_type: categories
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends parent %}
+
+{% block main %}
+
+<div class="categories">
+  <h1>Meer Categorien</h1>
+  {% for category in contents.categories %}
+  <a href="{{ category._permalink }}">
+    <div class="category" style="background-color: {{ category.color }}">
+      <span>{{ category.title }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="courses">
+  {% for course in category.courses %}
+      {% include summary with course %}
+  {% endfor %}
+</div>
+
+{% endblock %}
