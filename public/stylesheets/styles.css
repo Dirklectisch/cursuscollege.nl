@@ -167,6 +167,7 @@ div.related > div.Summary {
 
 div.courses > div.summary {
   margin-bottom: 20px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 /* Course Summary */
@@ -238,6 +239,7 @@ div.categories {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 div.categories > h1 {
@@ -261,6 +263,7 @@ div.category {
   border-right: 0px;
   border-style: solid;
   border-color: #686868;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 div.category > span {
