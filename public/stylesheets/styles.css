@@ -1,7 +1,7 @@
 /* Global */
 
 body * {
-  font-family: 'Open Sans Regular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 * {
@@ -89,7 +89,7 @@ p {
 
 div.contentbox {
   border-style: solid;
-  border-left-width: 10px;
+  border-left-width: 6px;
   border-right-width: 0px;
   border-bottom-width: 0px;
   border-top-width: 0px;
@@ -112,7 +112,7 @@ article.course > header {
 }
 
 article.course header * {
-  font-family: 'Open Sans Bold', sans-serif; 
+  font-weight: bold;
 }
 
 article.course header > hgroup > h1 {
@@ -120,7 +120,7 @@ article.course header > hgroup > h1 {
   margin-bottom: 0px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.3em;
   color: #2C9AE5;
   text-transform: uppercase;
 }
@@ -159,7 +159,7 @@ div.related > h3 {
   text-transform: uppercase;
 }
 
-div.related > div.summary {
+div.related > div.Summary {
   margin-bottom: 20px;
 }
 
@@ -187,7 +187,8 @@ div.summary > article.course > img {
 
 div.summary > article.course > div {
   margin-top: 10px;
-  width: 367px;
+  padding-right: 5px;
+  width: 371px;
 }
 
 div.summary > article.course > div > p {
@@ -216,10 +217,12 @@ div.summary > article.course > aside > div {
   background-color: #2C9AE5;
   position: relative;
   top: -5px;
+  padding-top: 3px;
 }
 
 div.summary > article.course > aside > div > * {
-  font: 13px 'Open Sans Regular', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
   color: white;
 }
 
@@ -238,7 +241,7 @@ div.categories {
 }
 
 div.categories > h1 {
-  font-family: 'Open Sans Regular', sans-serif;
+  font-style: bold;
   font-size: 13px;
   text-transform: uppercase;
   color: #686868;
@@ -262,7 +265,7 @@ div.category {
 
 div.category > span {
   display: inline-block;
-  font-family: 'Open Sans Bold', sans-serif;
+  font-weight: 700; 
   font-size: 14px;
   text-transform: uppercase;
   color: white;
