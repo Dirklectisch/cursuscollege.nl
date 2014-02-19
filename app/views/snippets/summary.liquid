@@ -1,24 +1,26 @@
 {% assign category-color = course.category.color %}
 
+<a href="/courses/{{ course._permalink }}">
 <div class="summary contentbox" style="border-color: {{ category-color }}">
-  <article class="course">
-    <img class="featured" src="{{ course.image.url }}">
-    <div>
-      <header>
-        <hgroup>
-          <h1 style="color: {{ category-color }}">{{ course.title }}</h1>
-          <h2 style="color: {{ category-color }}">{{ course.category.title }}</h2>
-        </hgroup>
-      </header>
-      <p>{{ course.teaser }}</p>
-    </div>
-    <aside>
-      <img src="http://placehold.it/119x170">
-      <div style="background-color: {{ category-color }}">
-        <span>STARTDATUM</span><br/>
-        <time datetime="2010-10-27">27-10-2010</time><br/>
-        <span>MEER!</span>
+    <article class="course">
+      <img class="featured" src="{{ course.image.url }}">
+      <div>
+        <header>
+          <hgroup>
+            <h1 style="color: {{ category-color }}">{{ course.title }}</h1>
+            <h2 style="color: {{ category-color }}">{{ course.category.title }}</h2>
+          </hgroup>
+        </header>
+        <p>{{ course.teaser }}</p>
       </div>
-    </aside>
-  </article>
+      <aside>
+        <img src="http://placehold.it/119x170">
+        <div style="background-color: {{ category-color }}">
+          <span>STARTDATUM</span><br/>
+          <time datetime="2010-10-27">27-10-2010</time><br/>
+          <span>MEER!</span>
+        </div>
+      </aside>
+    </article>
 </div>
+</a>
