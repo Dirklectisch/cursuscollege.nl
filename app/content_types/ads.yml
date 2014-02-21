@@ -1,0 +1,49 @@
+# Public name of this content type
+name: Ads
+
+# Lowercase, underscored handle used to access this type
+slug: ads
+
+# Explanation for the backoffice
+description: Advertenties op de homepage
+
+# Default field (e.g title)
+label_field_name: title
+
+# Order of entries
+order_by: manually # default: manually, also available: created_at or any field slug
+
+# Order direction
+# order_direction: asc # default: asc, also available: desc
+
+# Display entries grouped by <field> in the backoffice
+# group_by: <your field>
+
+# Activate public 'create' API (e.g for a contact form)
+# public_submission_enabled: false
+
+# Emails to be notified on new entries using the public API
+# public_submission_accounts: ['john@acme.net']
+
+# Describe each field. The name shoud always be an underscored string
+fields: 
+- title: # Name of the field
+    label: Title
+    type: string
+    required: true
+    hint: De titel van de advertentie
+    localized: false
+
+- link: # Name of the field
+    label: Link
+    type: string
+    required: true
+    hint: Het internet adres waar de advertentie naar verwijst
+    localized: false
+
+- image: # Name of the field
+    label: Image
+    type: file
+    required: true
+    hint: De afbeelding bij de advertentie
+    localized: false

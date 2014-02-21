@@ -35,10 +35,6 @@ content_type: categories
   {% endfor %}
 </div>
 
-<div class="courses">
-  {% for course in category.courses %}
-      {% include summary with course %}
-  {% endfor %}
-</div>
+{% include courses with courses: category.courses %}
 
 {% endblock %}

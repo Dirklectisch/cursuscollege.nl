@@ -1,0 +1,15 @@
+- "Sample 1":
+    link: "http://www.google.com"
+    image: http://placehold.it/185x185 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 2":
+    link: "http://www.google.com"
+    image: http://placehold.it/185x185 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 3":
+    link: "http://www.google.com"
+    image: http://placehold.it/185x185 # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 4":
+    link: "http://www.google.com"
+    image: http://placehold.it/185x185 # Path to a file in the public/samples folder or to a remote and external file.

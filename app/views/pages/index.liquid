@@ -35,6 +35,17 @@ published: true
     <img class="mast" src="{% editable_file 'masthead' %}http://placehold.it/979x569{% endeditable_file %}">
     <div id="main">
     {% block 'main' %}
+    
+    <div class="ads">
+      {% for ad in contents.ads %}
+        <a href="{{ ad.link }}">
+          <img src="{{ ad.image.url }}" title="{{ ad.title }}" alt="{{ ad.title }}"/>
+        </a>
+      {% endfor %}
+    </div>
+    
+    {% include courses with courses: contents.courses %}
+    
     {% endblock %}
     </div>
     <!--footer>
