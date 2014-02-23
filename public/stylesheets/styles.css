@@ -101,6 +101,7 @@ div.contentbox {
 
 div.details {
   width: 652px;
+  min-height: 340px;
   padding: 10px;
 }
 
@@ -149,18 +150,29 @@ div.details article.course > img.category {
 
 /* Related Courses */
 
-div.related > h3 {
+div.related > header {
   display: block;
-  font-size: 14px;
   width: 162px;
   height: 33px;
-  background: #2C9AE5;
+  background: #2C9AE5;;
+  margin-bottom: 20px;
+}
+
+div.related > header > h3 {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 33px;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 div.related > div.Summary {
   margin-bottom: 20px;
+}
+
+div.related > div.categories {
+  float: right;
 }
 
 /* Course List */

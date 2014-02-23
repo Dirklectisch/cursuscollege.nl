@@ -24,16 +24,7 @@ content_type: categories
 
 {% block main %}
 
-<div class="categories">
-  <h1>Meer Categorien</h1>
-  {% for category in contents.categories %}
-  <a href="{{ category._permalink }}">
-    <div class="category" style="background-color: {{ category.color }}">
-      <span>{{ category.title }}</span>
-    </div>
-  </a>
-  {% endfor %}
-</div>
+{% include categories %}
 
 {% include courses with courses: category.courses %}
 
