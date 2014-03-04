@@ -1,0 +1,21 @@
+---
+title: Pages
+
+# true if the page is included in the menu
+listed: false
+
+# true if the page is published
+published: false
+
+---
+{% extends parent %}
+
+{% block main %}
+
+<div class="details contentbox">
+  {% editable_text "content", hint: "Inhoud van de pagina." %}
+  <h3>Nieuwe pagina</h3>
+  {% endeditable_text %}
+</div>
+
+{% endblock %}

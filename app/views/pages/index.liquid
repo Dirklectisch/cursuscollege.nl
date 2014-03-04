@@ -15,7 +15,8 @@ published: true
   <body class="{{ page.slug }}">
     <header>
       <img class="logo" src="{{ 'logo.png' | theme_image_url }}"/>
-      <nav class="global">
+      {% nav site, depth: 2, no_wrapper: false, exclude: nil, icon: false %}
+      <!-- nav class="global">
         <ul>
           <li><a href="#">Nieuws</a></li>
           <li>
@@ -30,7 +31,7 @@ published: true
           <li><a href="#">Docenten</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
+      </nav-->
     </header>
     <img class="mast" src="{% editable_file 'masthead' %}http://placehold.it/979x569{% endeditable_file %}">
     <div id="main">
@@ -48,8 +49,9 @@ published: true
     
     {% endblock %}
     </div>
-    <!--footer>
-      <img src="./img/logo.png" >
-    </footer-->
+    <footer>
+      <img src="{{ 'logo_footer.png' | theme_image_url }}" >
+      {% nav pages, depth: 1, no_wrapper: false, exclude: nil, icon: false %}
+    </footer>
   </body>
 </html>
