@@ -22,48 +22,60 @@ content_type: courses
 {% block main %}
 
 {% assign category-color = course.category.color %}
-
-<div class="meetings">
-  {% for meeting in course.meetings %}
-    {% if forloop.index0 < 2 %}
-    <div class="meeting">
-      <div style="border-color: {{ category-color }}">
-        <dl>
-          <dt>START</dt>
-          <dd>{{ meeting.start | localized_date: '%d-%m-%Y' }}</dd>
-          <dt>DUUR</dt>
-          <dd>{{ meeting.period }}</dd>
-          <dt>TIJD</dt>
-          <dd>{{ meeting.start | localized_date: '%H:%M' }}</dd>
-          <dt>DOCENT</dt>
-          <dd>{{ meeting.teacher }}</dd>
-          <dt>PRIJS</dt>
-          <dd>&euro; {{ meeting.price }} incl. BTW</dd>
-          <dt>CURSUSNUMMER</dt>
-          <dd>{{ meeting.number }}</dd>
-        </dl>
-      </div>
-      <a href="#">
-        <div class="btn" style="background-color: {{ category-color }}">
-          <span>Schrijf je in</span>
+<div class="top">
+  <div class="sidebar">
+    <div class="meetings">
+      {% for meeting in course.meetings %}
+        {% if forloop.index0 < 2 %}
+        <div class="meeting">
+          <div style="border-color: {{ category-color }}">
+            <dl>
+              <dt>START</dt>
+              <dd>{{ meeting.start | localized_date: '%d-%m-%Y' }}</dd>
+              <dt>DUUR</dt>
+              <dd>{{ meeting.period }}</dd>
+              <dt>TIJD</dt>
+              <dd>{{ meeting.start | localized_date: '%H:%M' }}</dd>
+              <dt>DOCENT</dt>
+              <dd>{{ meeting.teacher }}</dd>
+              <dt>PRIJS</dt>
+              <dd>&euro; {{ meeting.price }} incl. BTW</dd>
+              <dt>CURSUSNUMMER</dt>
+              <dd>{{ meeting.number }}</dd>
+            </dl>
+          </div>
+          <a href="#">
+            <div class="btn" style="background-color: {{ category-color }}">
+              <span>Schrijf je in</span>
+            </div>
+          </a>
         </div>
-      </a>
+        {% endif %}
+      {% endfor %}
     </div>
-    {% endif %}
-  {% endfor %}
-</div>
-<div class="details contentbox" style="border-color: {{ category-color }}">
-  <article class="course">
-    <img class="category" src="http://placehold.it/119x227">
-    <header>
-      <hgroup>
-        <h1 style="color: {{ category-color }}">{{ course.title }}</h1>
-        <h2 style="color: {{ category-color }}">{{ course.category.title }}</h2>
-      </hgroup>
-    </header>
-    <img class="featured" src="{{ course.image.url }}">
-    <p>{{ course.description }}</p>
-  </arcticle>
+    <div class="testimonials" style="border-color: {{ category-color }}">
+      <h1>Testimonials</h1>
+      {% for testimonial in course.testimonials %}
+      <div class="testimonial">
+        <span>{{ testimonial.quote }}</span><br/>
+        <span>{{ testimonial.author }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="details contentbox" style="border-color: {{ category-color }}">
+    <article class="course">
+      <img class="category" src="http://placehold.it/119x227">
+      <header>
+        <hgroup>
+          <h1 style="color: {{ category-color }}">{{ course.title }}</h1>
+          <h2 style="color: {{ category-color }}">{{ course.category.title }}</h2>
+        </hgroup>
+      </header>
+      <img class="featured" src="{{ course.image.url }}">
+      <p>{{ course.description }}</p>
+    </arcticle>
+  </div>
 </div>
 <br/>
 <div class="related" >

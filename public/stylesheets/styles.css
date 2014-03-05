@@ -107,7 +107,7 @@ header nav li ul > li {
 
 div.details {
   width: 652px;
-  min-height: 340px;
+  min-height: 700px;
   padding: 10px;
   border-right-width: 2px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
@@ -208,8 +208,11 @@ div.courses > a:hover
 
 /* Meetings */
 
-div.meetings {
+div.sidebar {
   float: right;
+}
+
+div.meetings {
   margin-top: 60px;
 }
 
@@ -274,6 +277,44 @@ div.meetings div.btn span {
   color: white;
   text-transform: uppercase;
   text-align: center;
+}
+
+/* Testimonials */
+
+div.testimonials {
+  float: right;
+  width: 334px;
+  margin-right: 10px;
+  background-color: white;
+  border-style: solid;
+  border-left-width: 6px;
+  border-right-width: 2px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  padding: 10px;
+  padding-top: 0px;
+  border-color: #2C9AE5;
+}
+
+div.testimonials h1 {
+  font-weight: bold;
+  font-size: 13px;
+  color: #686868;
+  text-transform: uppercase;
+}
+
+div.testimonial {
+  margin-top: 10px;
+}
+
+div.testimonial > * {
+  font-weight: regular;
+  font-size: 13px;
+  color: #686868;
+}
+
+div.testimonial :last-child {
+ font-style: italic; 
 }
 
 /* Course Summary */

@@ -74,3 +74,13 @@ fields:
     class_name: meetings # Define the slug of the target content type (eg. comments)
     inverse_of: course  # Define the name of the field referring to Tests in the target content type
     ui_enabled: true # If you want to manage the entries of the relationship directly from the source entry
+    
+- testimonials: # Name of the field
+    label: Testimonials
+    type: has_many
+    required: false
+    localized: false
+    class_name: testimonials # Define the slug of the target content type (eg. comments)
+    inverse_of: course  # Define the name of the field referring to Tests in the target content type
+    ui_enabled: true # If you want to manage the entries of the relationship directly from the source entry
+    
