@@ -1,0 +1,27 @@
+- "3829846":
+    teacher: "Wils van der Ven"
+    start: "2013-08-13 10:00:00 -0500"
+    period: "2 weken"
+    course: bloemdecoratie
+    price: "300"
+
+- "3829847":
+    teacher: "Dirk Geurs"
+    start: "2013-08-13 10:00:00 -0500"
+    period: "3 weken"
+    course: bloemdecoratie
+    price: "800"
+
+- "3829848":
+    teacher: "Rene Verhoeven"
+    start: "2013-08-13 10:00:00 -0500"
+    period: "4 weken"
+    course: bloemdecoratie
+    price: "700"
+
+- "3829849":
+    teacher: "Lieske Veraart"
+    start: "2013-08-13 10:00:00 -0500"
+    period: "5 weken"
+    course: volleybal
+    price: "900"

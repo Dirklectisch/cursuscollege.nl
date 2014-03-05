@@ -110,6 +110,7 @@ div.details {
   min-height: 340px;
   padding: 10px;
   border-right-width: 2px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 article.course > header {
@@ -200,9 +201,79 @@ div.courses > a {
 
 div.courses > a:hover 
 {
-   color: black; 
-   text-decoration: none; 
-   cursor: pointer;  
+  color: black; 
+  text-decoration: none; 
+  cursor: pointer;  
+}
+
+/* Meetings */
+
+div.meetings {
+  float: right;
+  margin-top: 60px;
+}
+
+div.meeting {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+div.meeting > div {
+  width: 162px;
+  height: 337px;
+  border-style: solid;
+  border-left-width: 6px;
+  border-right-width: 2px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-color: #2C9AE5;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 4px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+div.meeting dl {
+  margin-top: 0px;
+}
+
+div.meeting dt {
+  font-weight: bold;
+  font-size: 14px;
+  color: #686868;
+  margin-top: 10px;
+}
+
+div.meeting dd {
+  font-weight: regular;
+  font-size: 14px;
+  color: #686868;
+  margin-left: 0px;
+  margin-top: 4px;
+}
+
+div.meetings a {
+  text-decoration: none;
+}
+
+div.meetings div.btn {
+  display: block;
+  width: 162px;
+  height: 33px;
+  background: #2C9AE5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+div.meetings div.btn span {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-left: 20px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Course Summary */

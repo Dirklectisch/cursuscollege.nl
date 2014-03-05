@@ -22,7 +22,36 @@ content_type: courses
 {% block main %}
 
 {% assign category-color = course.category.color %}
-  
+
+<div class="meetings">
+  {% for meeting in course.meetings %}
+    {% if forloop.index0 < 2 %}
+    <div class="meeting">
+      <div style="border-color: {{ category-color }}">
+        <dl>
+          <dt>START</dt>
+          <dd>{{ meeting.start | localized_date: '%d-%m-%Y' }}</dd>
+          <dt>DUUR</dt>
+          <dd>{{ meeting.period }}</dd>
+          <dt>TIJD</dt>
+          <dd>{{ meeting.start | localized_date: '%H:%M' }}</dd>
+          <dt>DOCENT</dt>
+          <dd>{{ meeting.teacher }}</dd>
+          <dt>PRIJS</dt>
+          <dd>&euro; {{ meeting.price }} incl. BTW</dd>
+          <dt>CURSUSNUMMER</dt>
+          <dd>{{ meeting.number }}</dd>
+        </dl>
+      </div>
+      <a href="#">
+        <div class="btn" style="background-color: {{ category-color }}">
+          <span>Schrijf je in</span>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
 <div class="details contentbox" style="border-color: {{ category-color }}">
   <article class="course">
     <img class="category" src="http://placehold.it/119x227">
