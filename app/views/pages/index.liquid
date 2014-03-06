@@ -49,7 +49,11 @@ published: true
     
     {% endblock %}
     </div>
+    {% if category-color and page.slug != "index" %}
+    <footer style="background-color: {{ category-color }}">
+    {% else %}
     <footer>
+    {% endif %}
       <img src="{{ 'logo_footer.png' | theme_image_url }}" >
       {% nav pages, depth: 1, no_wrapper: false, exclude: nil, icon: false %}
     </footer>
