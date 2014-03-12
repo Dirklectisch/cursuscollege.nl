@@ -40,12 +40,19 @@ fields:
     required: false
     hint: Het kleurnummer van de categorie
     localized: false
+    
+- teaser_logo:
+    label: Logo
+    type: file
+    required: false
+    hint: Het logo van de categorie in de cursus samenvatting
+    localized: false
 
 - logo: # Name of the field
     label: Logo
     type: file
     required: false
-    hint: Het logo van de categorie
+    hint: Het logo van de categorie in de cursus omschrijving
     localized: false
     
 - courses: # Name of the field

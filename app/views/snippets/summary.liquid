@@ -14,7 +14,7 @@
         <p>{{ course.teaser }}</p>
       </div>
       <aside>
-        <img src="http://placehold.it/119x170">
+        <img src="{{ course.category.teaser_logo.url }}">
         <div style="background-color: {{ category-color }}">
           <span>STARTDATUM</span><br/>
           <time>{{ course.meetings.first.start | localized_date: '%d-%m-%Y' }}</time><br/>

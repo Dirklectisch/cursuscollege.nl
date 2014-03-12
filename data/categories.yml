@@ -1,15 +1,19 @@
 - "Doen":
     color: "#A8CC46"
+    teaser_logo: http://placehold.it/119x173 
     logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
 
 - "Bloemen":
     color: "#EA476A"
+    teaser_logo: http://placehold.it/119x173 
     logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
 
 - "Wedding":
     color: "#FC5EB9"
+    teaser_logo: http://placehold.it/119x173 
     logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
 
 - "Sport":
     color: "#D69061"
+    teaser_logo: http://placehold.it/119x173 
     logo: http://placehold.it/119x173 # Path to a file in the public/samples folder or to a remote and external file.
