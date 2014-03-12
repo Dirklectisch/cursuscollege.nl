@@ -14,7 +14,9 @@ published: true
   </head>
   <body class="{{ page.slug }}">
     <header>
-      <img class="logo" src="{{ 'logo.png' | theme_image_url }}"/>
+      <a href="/">
+        <img class="logo" src="{{ 'logo.png' | theme_image_url }}"/>
+      </a>
       {% nav site, depth: 2, no_wrapper: false, exclude: nil, icon: false %}
       <!-- nav class="global">
         <ul>
