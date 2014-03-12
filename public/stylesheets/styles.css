@@ -474,6 +474,9 @@ footer > img {
 
 footer > nav {
   float: left;
+  margin-left: 53px;
+  margin-top: 13px;
+  width: 300px;
 }
 
 footer > nav li {
@@ -485,4 +488,14 @@ footer > nav li a {
   text-decoration: none;
   text-transform: lowercase;
   color: white;
+}
+
+footer nav > ul {
+  padding: 1em;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
 }
