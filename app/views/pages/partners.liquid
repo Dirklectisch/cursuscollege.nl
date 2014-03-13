@@ -10,9 +10,6 @@ published: true
 # position among sibling pages
 position: 3
 
-# sets a redirection to the given url (301)
-redirect_url: "/"
-
 # content type that this page is templatizing
 # content_type: "<slug of one of the content types>"
 
@@ -20,3 +17,30 @@ redirect_url: "/"
 #   'some_block/some_slug': "<text>"
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
+
+{% extends parent %}
+
+{% block main %}
+
+<div class="listview">
+{% for child in page.children %}
+  <a href="{{ child.fullpath }}">
+    <div class="summary contentbox">
+        <article class="course">
+          <img class="featured" src="{{ child.image }}">
+          <div>
+            <header>
+              <hgroup>
+                <h1>{{ child.title }}</h1>
+              </hgroup>
+            </header>
+            <p>{{ child.teaser }}</p>
+          </div>
+        </article>
+    </div>
+  </a>
+{% endfor %}
+</div>
+
+{% endblock %}
+

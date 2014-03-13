@@ -10,6 +10,10 @@ body * {
           box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   background: #D3D3D3;
 }
@@ -195,6 +199,7 @@ div.courses {
   width: 731px;
 }
 
+div.listview div.summary,
 div.courses div.summary {
   margin-bottom: 20px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
@@ -498,4 +503,11 @@ footer nav > ul {
   -webkit-column-gap: 1em;
   column-count: 2;
   column-gap: 1em;
+}
+
+/* List view */
+
+div.listview div.summary {
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
 }
