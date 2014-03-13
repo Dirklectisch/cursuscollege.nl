@@ -42,14 +42,14 @@ fields:
     localized: false
     
 - teaser_logo:
-    label: Logo
+    label: Teaser Logo
     type: file
     required: false
     hint: Het logo van de categorie in de cursus samenvatting
     localized: false
 
 - logo: # Name of the field
-    label: Logo
+    label: Page Logo
     type: file
     required: false
     hint: Het logo van de categorie in de cursus omschrijving
