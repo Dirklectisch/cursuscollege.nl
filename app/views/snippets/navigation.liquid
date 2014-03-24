@@ -1,0 +1,41 @@
+<nav class="global">
+  <ul>
+  {% for child in site.index.children %}
+    {% if child.published? and child.listed? %}
+      <li>
+        <a href="/{{ child.fullpath }}">{{ child.title }}</a>
+        <ul>
+        {% for grandchild in child.children %}
+          {% if grandchild.published? and grandchild.listed? %}
+            {% if grandchild.templatized? %}
+              {% for entry in contents.categories %}
+                <li><a href="/{{ grandchild.parent.fullpath }}/{{ entry._permalink }}">{{ entry._label }}</a></li>
+              {% endfor %}
+            {% else %}
+              <li><a href="/{{ grandchild.fullpath }}">{{ grandchild.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</nav>
+
+<!-- nav class="global">
+  <ul>
+    <li><a href="#">Nieuws</a></li>
+    <li>
+      <a href="#">Cursussen</a>
+      <ul>
+        <li><a href="#">Interieur</a></li>
+        <li><a href="#">Mode</a></li>
+        <li><a href="#">Wedding</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Docenten</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav-->

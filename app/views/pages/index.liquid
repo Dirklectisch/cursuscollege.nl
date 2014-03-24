@@ -17,23 +17,7 @@ published: true
       <a href="/">
         <img class="logo" src="{{ 'logo.png' | theme_image_url }}"/>
       </a>
-      {% nav site, depth: 2, no_wrapper: false, exclude: nil, icon: false %}
-      <!-- nav class="global">
-        <ul>
-          <li><a href="#">Nieuws</a></li>
-          <li>
-            <a href="#">Cursussen</a>
-            <ul>
-              <li><a href="#">Interieur</a></li>
-              <li><a href="#">Mode</a></li>
-              <li><a href="#">Wedding</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Docenten</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav-->
+      {% include 'navigation' %}
     </header>
     <img class="mast" src="{% editable_file 'masthead' %}http://placehold.it/979x569{% endeditable_file %}">
     <div id="main">
