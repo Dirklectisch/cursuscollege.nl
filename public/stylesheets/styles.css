@@ -41,7 +41,7 @@ img.mast {
 
 #main {
   position: relative;
-  top: -100px;
+  top: -182px;
   width: 1032px;
   margin-bottom: 63px;
 }
@@ -166,6 +166,36 @@ div.details article.course > img.featured {
 div.details article.course > img.category {
   float: right;
   margin-left: 10px;
+}
+
+/* Sidebar */
+
+div.sidebox {
+  width: 215px;
+  margin-top: 96px;
+  margin-right: 119px;
+  padding-left: 10px;
+  border-right-width: 2px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+  float: right;
+}
+
+div.sidebox h3 {
+  padding-top: 7px;
+  padding-bottom: 0px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #686868;
+}
+
+div.sidebox p {
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+span.italics {
+  font-style: italic;
 }
 
 /* Related Courses */
@@ -464,7 +494,7 @@ div.ads img {
 
 footer {
   position: relative;
-  top: -100px;
+  top: -182px;
   width: 1032px;
   height: 162px;
   background-color: #2C9AE5;

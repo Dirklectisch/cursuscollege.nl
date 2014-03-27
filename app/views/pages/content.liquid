@@ -21,6 +21,35 @@ published: false
   </div>
 {% endblock %}
 
+{% block sidebox %}
+{% if page.title == 'Contact' %}
+  <div class="sidebox contentbox">
+    <h3>SECRETARIAAT/POSTADRES</h3>
+    <p>geen bezoekadres<br/>
+       Cursus College<br/>
+       Nassaukade 62 N/P<br/>
+       1052CP Amsterdam</p>
+  
+    <h3>MAIL</h3>
+    <p>mail@cursuscollege.nl<br/></p>
+  
+    <h3>TELEFOON</h3>
+    <p>06 39 76 99 33<br/>
+      <span class="italics">
+       Bellen tijdens kantoor tijden:<br/>
+       maandag tot vrijdag<br/>
+       van 10.00 tot 17.00</p></span>
+     
+    <h3>BANK</h3>
+    <p>ING 5108087<br/>
+       t.a.v. Cursus College<br/>
+       IBAN: NL89 ING B000 5108087<br/>
+       BIC: ING BNL 2A</p>
+       
+  </div>
+{% endif %}
+{% endblock %}
+
 <div class="details contentbox">
   {% editable_text "content", hint: "Inhoud van de pagina." %}
   <h3>Nieuwe pagina</h3>
