@@ -9,7 +9,7 @@
           {% if grandchild.published? and grandchild.listed? %}
             {% if grandchild.templatized? %}
               {% for entry in contents.categories %}
-                <li><a href="/{{ grandchild.parent.fullpath }}/{{ entry._permalink }}">{{ entry._label }}</a></li>
+                <li style="background-color: {{ entry.color }}"><a href="/{{ grandchild.parent.fullpath }}/{{ entry._permalink }}">{{ entry._label }}</a></li>
               {% endfor %}
             {% else %}
               <li><a href="/{{ grandchild.fullpath }}">{{ grandchild.title }}</a></li>
