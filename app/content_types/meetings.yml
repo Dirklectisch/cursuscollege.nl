@@ -14,7 +14,7 @@ label_field_name: number
 order_by: start # default: manually, also available: created_at or any field slug
 
 # Order direction
-# order_direction: asc # default: asc, also available: desc
+order_direction: desc # default: asc, also available: desc
 
 # Display entries grouped by <field> in the backoffice
 # group_by: <your field>

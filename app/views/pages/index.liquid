@@ -31,7 +31,16 @@ published: true
       {% endfor %}
     </div>
     
-    {% include courses with courses: contents.courses %}
+    <div class="courses">
+    {% for meeting in contents.meetings %}
+      {% assign current_course = meeting.course._slug | append: '%' %}
+      {% unless used_courses contains current_course %}
+        {% capture used_courses %}{{ used_courses }}{{ current_course }}{% endcapture %} 
+        {% assign course = meeting.course %}
+        {% include summary with course %}
+      {% endunless %}
+    {% endfor %}
+    </div>
     
     {% endblock %}
     </div>
