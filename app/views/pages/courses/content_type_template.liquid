@@ -63,7 +63,9 @@ content_type: courses
   </div>
   <div class="details contentbox" style="border-color: {{ category-color }}">
     <article class="course">
-      <img class="category" src="http://placehold.it/119x227">
+      {% if course.category.logo %}
+      <img class="category" src="{{ course.category.logo.url }}">
+      {% endif %}
       <header>
         <hgroup>
           <h1 style="color: {{ category-color }}">{{ course.title }}</h1>
