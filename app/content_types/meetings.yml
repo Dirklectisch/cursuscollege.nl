@@ -62,9 +62,23 @@ fields:
     hint: De duur van de cursus (bv aantal weken)
     localized: false
     
+- location:
+    label: Location
+    type: string
+    required: false
+    hint: De locatie van de cursus
+    localized: false      
+    
+- payment_url:
+    label: Payment URL
+    type: string
+    required: true
+    hint: De URL naar de betaalpagina
+    localized: false    
+    
 - course: # Name of the field
     label: Course # Human readable name of the field
     type: belongs_to
     required: true
     localized: false
-    class_name: courses
+    class_name: courses  

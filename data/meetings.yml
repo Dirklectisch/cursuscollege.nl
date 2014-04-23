@@ -2,6 +2,8 @@
     teacher: "Wils van der Ven"
     start: "2013-08-13 10:00:00 -0500"
     period: "2 weken"
+    location: Amsterdam
+    payment_url: https://www.nowonlinetickets.nl/Shop/EventDetails/428E58C9769E185F56DB90DCA3255AF3
     course: Ondernemen op je benen
     price: "300"
 
