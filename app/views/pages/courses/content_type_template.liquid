@@ -55,15 +55,11 @@ content_type: courses
         {% endif %}
       {% endfor %}
     </div>
+    {% if course.testimonials %}
     <div class="testimonials" style="border-color: {{ category-color }}">
-      <h1>Testimonials</h1>
-      {% for testimonial in course.testimonials %}
-      <div class="testimonial">
-        <span>{{ testimonial.quote }}</span><br/>
-        <span>{{ testimonial.author }}</span>
-      </div>
-      {% endfor %}
+      {{ course.testimonials }}
     </div>
+    {% endif %}
   </div>
   <div class="details contentbox" style="border-color: {{ category-color }}">
     <article class="course">
