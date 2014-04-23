@@ -26,6 +26,17 @@ content_type: categories
 
 {% include categories %}
 
-{% include courses with courses: category.courses %}
+<div class="courses">
+{% for meeting in contents.meetings %}
+  {% assign current_course = meeting.course._slug | append: '%' %}
+  {% unless used_courses contains current_course %}
+    {% capture used_courses %}{{ used_courses }}{{ current_course }}{% endcapture %} 
+    {% assign course = meeting.course %}
+    {% if course.category.title == category.title %}
+      {% include summary with course %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+</div>
 
 {% endblock %}

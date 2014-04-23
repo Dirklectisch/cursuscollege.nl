@@ -85,7 +85,19 @@ content_type: courses
     <h3>Andere Cursussen</h3>
   </header>
   {% include categories %}
-  {% include courses with courses: course.category.courses %}
+
+  <div class="courses">
+  {% for meeting in contents.meetings %}
+    {% assign current_course = meeting.course._slug | append: '%' %}
+    {% unless used_courses contains current_course %}
+      {% capture used_courses %}{{ used_courses }}{{ current_course }}{% endcapture %} 
+      {% assign thiscourse = meeting.course %}
+      {% if thiscourse.category.title == course.category.title %}
+        {% include summary with course: thiscourse %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  </div>
 </div>
 
 {% endblock %}
