@@ -204,7 +204,7 @@ div.related > header {
   display: block;
   width: 162px;
   height: 33px;
-  background: #2C9AE5;;
+  background: #2C9AE5;
   margin-bottom: 20px;
 }
 
@@ -535,6 +535,13 @@ footer nav > ul {
   -webkit-column-gap: 1em;
   column-count: 2;
   column-gap: 1em;
+}
+
+footer #social {
+  float: left;
+  width: 72px;
+  margin-top: 45px;
+  margin-left: 200px;
 }
 
 /* List view */
