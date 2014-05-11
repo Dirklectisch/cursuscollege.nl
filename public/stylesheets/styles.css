@@ -541,7 +541,53 @@ footer #social {
   float: left;
   width: 72px;
   margin-top: 45px;
-  margin-left: 200px;
+  margin-left: 10px;
+}
+
+/* newsletter form */
+
+#newsletter {
+  float: left;
+  width: 248px;
+  margin-left: 170px;
+  margin-top: 45px;
+}
+
+#newsletter input[type=text] {
+  height: 33px;
+  width: 248px;
+  border: none;
+  margin-bottom: 5px;
+  color: black;
+  padding-left: 30px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: black;
+  font-size: 13px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: black;
+  font-size: 13px;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: black;
+  font-size: 13px;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: black;
+  font-size: 13px;
+}
+
+#newsletter input[type=submit] {
+  background-color: #686868;
+  border: none;
+  height: 33px;
+  width: 248px;
+  color: white;
+  font-size: 13px;
 }
 
 /* List view */

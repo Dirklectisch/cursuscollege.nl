@@ -51,6 +51,15 @@ published: true
     {% endif %}
       <img src="{{ 'logo_footer.png' | theme_image_url }}" >
       {% nav content, depth: 1, no_wrapper: false, exclude: nil, icon: false %}
+      <div id="newsletter">
+        <form method="post" action="https://cursuscollege.email-provider.nl/subscribe/post/index.php" accept-charset="utf-8">
+        <input type="hidden" name="next" value="" />
+        <input type="hidden" name="a" value="0dcqc4s85l" />
+        <input type="hidden" name="l" value="bzuth0ymw8" />
+        <input type="text" name="xGDX3bAfDk" id="id-xGDX3bAfDk" placeholder="Jouw e-mailadres">
+        <input type="submit" value="Schrijf mij in voor de nieuwsbrief" />
+        </form>
+      </div>
       <div id="social">
         <a href="https://www.facebook.com/CursusCollege?ref=hl"><img src="{{ 'facebook.png' | theme_image_url }}"/></a>
         <a href="http://www.twitter.com/CursusCollege"><img src="{{ 'twitter.png' | theme_image_url }}"/></a>
