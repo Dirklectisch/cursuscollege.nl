@@ -9,7 +9,14 @@
           {% if grandchild.published? and grandchild.listed? %}
             {% if grandchild.templatized? %}
               {% for entry in contents.categories %}
-                <li style="background-color: {{ entry.color }}"><a href="/{{ grandchild.parent.fullpath }}/{{ entry._permalink }}">{{ entry._label }}</a></li>
+                <li style="background-color: {{ entry.color }}">
+                  <a href="/{{ grandchild.parent.fullpath }}/{{ entry._permalink }}">{{ entry._label }}</a>
+                  <ul>
+                    {% for subentry in entry.courses %}
+                      <li style="background-color: {{ entry.color }}"><a href="/courses/{{ subentry._permalink }}">{{ subentry._label }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
               {% endfor %}
             {% else %}
               <li><a href="/{{ grandchild.fullpath }}">{{ grandchild.title }}</a></li>
