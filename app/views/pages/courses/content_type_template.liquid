@@ -19,6 +19,10 @@ content_type: courses
 ---
 {% extends index %}
 
+{% block mast %}
+  <img class="mast" src="{{ course.masthead.url }}">
+{% endblock %}
+
 {% block main %}
 
 {% assign category-color = course.category.color %}

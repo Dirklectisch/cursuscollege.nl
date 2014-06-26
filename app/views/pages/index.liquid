@@ -19,7 +19,9 @@ published: true
       </a>
       {% include 'navigation' %}
     </header>
+    {% block 'mast' %}
     <img class="mast" src="{% editable_file 'masthead' %}http://placehold.it/979x569{% endeditable_file %}">
+    {% endblock %}
     <div id="main">
     {% block 'main' %}
     

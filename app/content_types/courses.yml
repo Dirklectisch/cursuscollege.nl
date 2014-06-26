@@ -43,6 +43,13 @@ fields:
     # Enable or not the RTE [html|text]
     text_formatting: text
 
+- masthead: # Name of the field
+    label: Image
+    type: file
+    required: false
+    hint: De afbeelding boven aan de cursus pagina (979 x 569 pixels)
+    localized: false    
+
 - description: # Name of the field
     label: Description
     type: text
