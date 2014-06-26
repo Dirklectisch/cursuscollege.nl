@@ -171,12 +171,13 @@ div.details article.course > img.featured {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 div.details article.course > img.category {
   float: right;
   margin-left: 10px;
+  margin-top: 52px;
 }
 
 /* Sidebar */
