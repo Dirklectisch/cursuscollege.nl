@@ -44,7 +44,7 @@ fields:
     text_formatting: text
 
 - masthead: # Name of the field
-    label: Image
+    label: Masthead
     type: file
     required: false
     hint: De afbeelding boven aan de cursus pagina (979 x 569 pixels)
@@ -68,7 +68,7 @@ fields:
     
 - icon: # Name of the field
     label: Icon
-    type: Boolean
+    type: boolean
     hint: Zet het categorie icoon aan of uit op de cursuspagina
     
 - category: # Name of the field

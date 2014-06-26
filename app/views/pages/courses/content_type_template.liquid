@@ -20,7 +20,11 @@ content_type: courses
 {% extends index %}
 
 {% block mast %}
-  <img class="mast" src="{{ course.masthead.url }}">
+	{% if course.masthead %}
+		 <img class="mast" src="{{ course.masthead.url }}">
+	{% else %}
+		<img class="mast" src="http://placehold.it/979x569">
+	{% endif %}
 {% endblock %}
 
 {% block main %}
