@@ -99,7 +99,9 @@ content_type: courses
       {% capture used_courses %}{{ used_courses }}{{ current_course }}{% endcapture %} 
       {% assign thiscourse = meeting.course %}
       {% if thiscourse.category.title == course.category.title %}
-        {% include summary with course: thiscourse %}
+				{% unless thiscourse.title == course.title %}
+        	{% include summary with course: thiscourse %}
+				{% endunless %}
       {% endif %}
     {% endunless %}
   {% endfor %}
