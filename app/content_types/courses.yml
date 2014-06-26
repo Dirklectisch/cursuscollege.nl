@@ -67,8 +67,8 @@ fields:
     localized: false
     
 - icon: # Name of the field
-    label: Boolean
-    type: file
+    label: Icon
+    type: Boolean
     hint: Zet het categorie icoon aan of uit op de cursuspagina
     
 - category: # Name of the field
