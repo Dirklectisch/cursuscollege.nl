@@ -2,6 +2,7 @@
     teaser: "Corporis est autem aut sed. Quis quo nihil illo culpa et repellat natus quos. Sit accusamus ut dolores placeat. In dolores minus ut sint."
     masthead: http://placehold.it/979x569/E8117F/000000
     description: "Quam soluta quia doloribus. Provident repudiandae fugit eos recusandae atque eos. Quia et fugit non minus exercitationem ut molestias laboriosam. Dignissimos totam quia qui id repellendus."
+    icon: true
     image: http://placehold.it/215x227 # Path to a file in the public/samples folder or to a remote and external file.
     category: doen
 
@@ -9,6 +10,7 @@
     teaser: "Dolorum labore vitae ipsum voluptatem quod. Perferendis veniam ut totam possimus aut mollitia. Quis consequatur non debitis eos. Et magnam voluptas aut consequatur nulla beatae adipisci sunt."
     masthead: http://placehold.it/979x569/E8117F/000000
     description: "Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam. Incidunt sint est hic. Quos rerum est non soluta eos voluptatem. Dignissimos hic qui vel vero et quo aliquid numquam."
+    icon: true
     image: http://placehold.it/215x227 # Path to a file in the public/samples folder or to a remote and external file.
     category: doen
     testimonials: "Corporis est autem aut sed. Quis quo nihil illo culpa et repellat natus quos. Sit accusamus ut dolores placeat. In dolores minus ut sint. Corporis est autem aut sed. Quis quo nihil illo culpa et repellat natus quos. Sit accusamus ut dolores placeat. In dolores minus ut sint."
@@ -26,6 +28,7 @@
     description: "Sit et sit culpa necessitatibus architecto. Laudantium laboriosam corporis asperiores recusandae. Consectetur ut quia aut. Corporis enim a laboriosam. Ea dolor et consequuntur a est alias."
     masthead: http://placehold.it/979x569/E8117F/000000
     image: http://placehold.it/215x227 # Path to a file in the public/samples folder or to a remote and external file.
+    icon: false
     category: bloemen
     
 - "Lentestukjes":
@@ -33,6 +36,7 @@
     masthead: http://placehold.it/979x569/E8117F/000000
     description: "Sit et sit culpa necessitatibus architecto. Laudantium laboriosam corporis asperiores recusandae. Consectetur ut quia aut. Corporis enim a laboriosam. Ea dolor et consequuntur a est alias."
     image: http://placehold.it/215x227 # Path to a file in the public/samples folder or to a remote and external file.
+    icon: true
     category: bloemen    
         
 - "Diepzee Volleybal":
@@ -40,4 +44,5 @@
     masthead: http://placehold.it/979x569/E8117F/000000
     description: "Sit et sit culpa necessitatibus architecto. Laudantium laboriosam corporis asperiores recusandae. Consectetur ut quia aut. Corporis enim a laboriosam. Ea dolor et consequuntur a est alias."
     image: http://placehold.it/215x227 # Path to a file in the public/samples folder or to a remote and external file.
+    icon: true
     category: sport

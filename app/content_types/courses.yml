@@ -66,6 +66,11 @@ fields:
     hint: De afbeelding bij de cursus omschrijving
     localized: false
     
+- icon: # Name of the field
+    label: Boolean
+    type: file
+    hint: Zet het categorie icoon aan of uit op de cursuspagina
+    
 - category: # Name of the field
     label: Category # Human readable name of the field
     type: belongs_to
